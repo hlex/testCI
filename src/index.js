@@ -7,7 +7,7 @@ const minus = (x, y) => {
 }
 
 const multiply = (x, y) => {
-  return x * y;
+  return x * y * 1;
 }
 
 export {

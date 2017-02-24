@@ -1,11 +1,11 @@
 {
-  "name": "hlex-testCI",
+  "name": "hlex-testci",
   "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "cross-env NODE_ENV=production babel --copy-files --out-dir dist --ignore *.spec.js src",
+    "build": "NODE_ENV=production babel --copy-files --out-dir dist --ignore *.spec.js src",
     "commit": "git-cz",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -14,6 +14,10 @@
   },
   "author": "",
   "license": "ISC",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-preset-es2015": "^6.22.0",

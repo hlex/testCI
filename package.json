@@ -1,12 +1,13 @@
 {
   "name": "github",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production babel --copy-files --out-dir dist --ignore *.spec.js src",
-    "commit" : "git-cz" 
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
@@ -21,5 +22,9 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "semantic-release": "^6.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hlex/testCI.git"
   }
 }

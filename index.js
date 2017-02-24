@@ -2,4 +2,11 @@ const add = (x, y) => {
   return x + y;
 }
 
-export default add;
+const minus = (x, y) => {
+  return x - y;
+}
+
+export {
+  add,
+  minus,
+}
